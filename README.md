@@ -88,4 +88,4 @@ Hover effects and animations improve the visual experience, while dark mode prov
 
 ## Author
 
-Developed as a beginner front-end web development project to practice HTML, CSS, and JavaScript.
+Ann Ng'endo.
