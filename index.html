@@ -1,286 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technova&CO | Electronics Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            Technova&CO
-        </div>
+      <div class="logo">Technova&CO</div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-        </nav>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+      </nav>
 
-        <div class="header-buttons">
-            <button id="darkModeBtn">🌙</button>
-            <button id="cartBtn">🛒 Cart</button>
-        </div>
-
+      <div class="header-buttons">
+        <button id="darkModeBtn">🌙</button>
+        <button id="cartBtn">🛒 Cart</button>
+      </div>
     </header>
-
-    <section class="hero-text">
+    <main id="products">
+      <section class="hero">
         <div class="hero-text">
-            <p class="small-title">WELCOME TO TECHNOVA&CO</p>
+          <p class="small-title">WELCOME TO TECHNOVA&CO</p>
 
-            <h1>
-                Technology made
-                <span>simple.</span>
-            </h1>
-            <p>Discover modern electronics designed to make your everyday life easier.</p>
-           <a href="#products" class="shop-btn"><b>Shop Now</b></a>
+          <h1>
+            Technology made
+            <span>simple.</span>
+          </h1>
+          <p>
+            Discover modern electronics designed to make your everyday life
+            easier.
+          </p>
+          <a href="#products" class="shop-btn"><b>Shop Now</b></a>
         </div>
-    </section>
+      </section>
+    </main>
 
     <main id="products">
-    <div class-section-heading>
+      <div class="section-heading">
         <p class="small-title">OUR COLLECTION</p>
         <h2>Featured Products</h2>
         <p>Explore our latest technology and accessories</p>
-    </div>
+      </div>
 
-    <div class="filers">
-        <select>
-            <option>All Products</option>
-            <option>Phones</option>
-            <option>Audio</option>
-            <option>Wearables</option>
-            <option>Computers</option>
-        </select>
-        <select>
-            <option>Sort By</option>
-            <option>Price:Low to High</option>
-            <option>Price:High to Low</option>
-            <option>Highest Rated</option>
-        </select>
-    </div>
-    <div class="product-grid">
+      
+<div class="filters">
+  <label for="category">Category:</label>
+  <select id="category">
+    <option>All Products</option>
+    <option>Phones</option>
+    <option>Audio</option>
+    <option>Wearables</option>
+    <option>Computers</option>
+  </select>
 
+  <label for="sort">Sort By:</label>
+  <select id="sort">
+    <option>Sort By</option>
+    <option>Price: Low to High</option>
+    <option>Price: High to Low</option>
+    <option>Highest Rated</option>
+  </select>
+</div>
+
+      <div class="product-grid">
         <article class="product-card">
-           <div class="product-image">
-            <img src="images/phone.jpg" alt="Nova X1 Smartphone" width="370px">
-           </div> 
+          <div class="product-image">
+            <img
+              src="images/phone.jpg"
+              alt="Nova X1 Smartphone"
+            />
+          </div>
 
-           <div class="product-info">
+          <div class="product-info">
             <p class="category">SMARTPHONES</p>
             <h3>Nova x1 Smartphone</h3>
 
             <div class="rating">
-                ★★★★★
-                <span>(4.9)</span>
-                </div>
-
-                <p class="price">$699</p>
-                <button class="cart-button">
-                    Add to Cart
-                </button>
-
+              ★★★★★
+              <span>(4.9)</span>
             </div>
+
+            <p class="price">$699</p>
+            <button class="cart-button">Add to Cart</button>
+          </div>
         </article>
 
         <article class="product-card">
+          <div class="product-image">
+            <img
+              src="images/headphones.jpg"
+              alt="Aero Pro Headphones"
+            />
+          </div>
 
-        <div class="product-image">
-            <img src="images/headphones.jpg" alt="Aero Pro Headphones" width="370px">
-        </div>
-
-        <div class="product-info">
+          <div class="product-info">
             <p class="category">AUDIO</p>
             <h3>Aero Pro Headphones</h3>
 
-        <div class="rating">
-            ★★★★★
-            <span>(4.8)</span>
-        </div>
+            <div class="rating">
+              ★★★★★
+              <span>(4.8)</span>
+            </div>
 
-        <p class="price">$149</p>
-        <button class="cart-button">
-            Add to Cart
-        </button>
-    </div>
-    </article>
+            <p class="price">$149</p>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </article>
 
-    <article class="product-card">
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="images/smartwatch.jpg"
+              alt="Pulse Smartwatch"
+              width="370px"
+            />
+          </div>
 
-        <div class="product-image">
-            <img src="images/smartwatch.jpg" alt="Pulse Smartwatch" width="370px">
-        </div>
-
-        <div class="product-info">
+          <div class="product-info">
             <p class="category">WEARABLES</p>
-        <h3>Pulse Smartwatch</h3>
+            <h3>Pulse Smartwatch</h3>
 
-        <div class="rating">
-            ★★★★☆
-            <span>(4.6)</span>
-        </div>
+            <div class="rating">
+              ★★★★☆
+              <span>(4.6)</span>
+            </div>
 
-        <p class="price">$199</p>
-        <button class="cart-button">
-            Add to Cart
-        </button>
-        </div>
-    </article>
+            <p class="price">$199</p>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </article>
 
-    <article class="product-card">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="images/laptop.jpg" alt="UltraBook Air" />
+          </div>
 
-        <div class="product-image">
-            <img src="images/laptop.jpg" alt="UltraBook Air" width="370px">
-        </div>
-
-        <div class="product-info">
+          <div class="product-info">
             <p class="category Air">COMPUTERS</p>
             <h3>UltraBook Air</h3>
-    
-        <div class="rating">
-            ★★★★★
-            <span>(4.9)</span>
-        </div>
 
-        <p class="price">$899</p>
-        <button class="cart-button">
-            Add to Cart
-        </button>
-        </div>
-    </article>
+            <div class="rating">
+              ★★★★★
+              <span>(4.9)</span>
+            </div>
 
-    <article class="product-card">
+            <p class="price">$899</p>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </article>
 
-        <div class="product-image">
-            <img src="images/earbuds.jpg" alt="Nova Buds Pro" width="370px">
-        </div>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="images/earbuds.jpg" alt="Nova Buds Pro" />
+          </div>
 
-        <div class="product-info">
+          <div class="product-info">
             <p class="category">AUDIO</p>
             <h3>Nova Buds Pro</h3>
 
             <div class="rating">
-                ★★★★☆ 
-                <span>(4.5)</span>
+              ★★★★☆
+              <span>(4.5)</span>
             </div>
             <p class="price">$99</p>
 
-            <button class="cart-button">
-                Add to Cart
-            </button>
-        </div>
-    </article>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </article>
 
-    <article class="product-card">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="images/speaker.jpg" alt="SoundBox Mini" />
+          </div>
 
-        <div class="product-image">
-            <img src="images/speaker.jpg" alt="SoundBox Mini" width="370px">
-        </div>
-
-        <div class="product-info">
+          <div class="product-info">
             <p class="category">AUDIO</p>
             <h3>SoundBox Mini</h3>
 
             <div class="rating">
-              ★★★★☆ 
-              <span>(4.7)</span>  
+              ★★★★☆
+              <span>(4.7)</span>
             </div>
 
             <p class="price">$79</p>
-            <button class="cart-button">
-                Add to Cart
-            </button>
-        </div>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </main>
 
-    </article>
+    <main id="products">
+      <section id="about" class="about">
+        <h2>Why Technova&CO?</h2>
+        <p>
+          We bring together modern technology,simple design,and reliable
+          products to create a better shopping experience.
+        </p>
+      </section>
+    </main>
 
-</div>
+    <footer>
+      <p>© 2026 Technova&CO.All rights reserved</p>
+    </footer>
 
-</main>
-
-<section id="about" class="about">
-    <h2>Why Technova&CO?</h2>
-    <p>We bring together modern technology,simple design,and reliable products to create a better shopping experience.</p>
-</section>
-
-<footer>
-    <p>© 2026 Technova&CO.All rights reserved</p>
-</footer>
-
-<div class="modal" id="productModal">
-    <div class="modal-content">
+    <div class="modal" id="productModal">
+      <div class="modal-content">
         <button class="close-modal" id="closeModal">&times;</button>
 
-        <div class="modal-image">
-            📱
-        </div>
+        <div class="modal-image">📱</div>
 
         <div class="modal-info">
-            <p class="category">SMARTPHONES</p>
-            <h2>Nova X1 Smartphone</h2>
+          <p class="category">SMARTPHONES</p>
+          <h2>Nova X1 Smartphone</h2>
 
-            <div class="rating">
-                ★★★★★ 
-                <span>(4.9)</span>
-            </div>
+          <div class="rating">
+            ★★★★★
+            <span>(4.9)</span>
+          </div>
 
-            <p class="modal-price">$699</p>
-            <p>Experience powerful performance, a stunning display, and modern features with the Nova X1 Smartphone.</p>
+          <p class="modal-price">$699</p>
+          <p>
+            Experience powerful performance, a stunning display, and modern
+            features with the Nova X1 Smartphone.
+          </p>
 
-            <button class="modal-cart-button">
-                Add to Cart
-            </button>
+          <button class="modal-cart-button">Add to Cart</button>
         </div>
+      </div>
     </div>
-</div>
 
-<aside class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
+    <aside class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
         <h2>Your Cart</h2>
 
-        <button id="closeCart">&times;
-        </button>
-    </div>
+        <button id="closeCart">&times;</button>
+      </div>
 
-    <div class="cart-item">
-        <div class="cart-item-image">
-            📱
-        </div>
+      <div class="cart-item">
+        <div class="cart-item-image">📱</div>
 
         <div>
-            <h3>Nova X1 Smartphones</h3>
-            <p>$699</p>
+          <h3>Nova X1 Smartphones</h3>
+          <p>$699</p>
         </div>
-    </div>
+      </div>
 
-    <div class="cart-item">
-        <div cart-item-image>
-           🎧 
-        </div>
+      <div class="cart-item-image">
+        <div cart-item-image>🎧</div>
 
         <div>
-            <h3>Aero Pro Headphones</h3>
-            <p>$149</p>
+          <h3>Aero Pro Headphones</h3>
+          <p>$149</p>
         </div>
-    </div>
+      </div>
 
-    <div class="cart-footer">
+      <div class="cart-footer">
         <div class="cart-total">
-            <span>Total</span>
-            <strong>$848</strong>
+          <span>Total</span>
+          <strong>$848</strong>
         </div>
 
-        <button class="checkout-button">
-            Checkout
-        </button>
-    </div>
+        <button class="checkout-button">Checkout</button>
+      </div>
+    </aside>
 
-</aside>
-
-
-<script  src="script.js"></script>
-    
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
